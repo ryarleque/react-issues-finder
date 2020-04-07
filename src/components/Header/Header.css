@@ -2,4 +2,11 @@
     background: #28557b;
     height: 20rem;
     width: 100%;
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: -8rem;
+    font-weight: bold;
 }
