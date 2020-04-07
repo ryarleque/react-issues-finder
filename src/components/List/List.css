@@ -1,0 +1,62 @@
+.list {
+    background-color: #EFF6FC;
+    padding: 1rem;
+    bottom: 3.5rem;
+    position: relative;
+}
+
+.list__card {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px 1px #afafaf;
+    background: white;
+    color: #28557b;
+    max-width: 850px;
+    margin: 1.5rem auto;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+}
+
+.list__card:hover {
+    /* background: #00A8EB; */
+    /* color: white; */
+    background: #00a8eb7a;
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+} 
+
+.list__title {
+    font-weight: bold;
+}
+
+.list__user {
+    font-style: italic;
+}
+
+.list__label {
+    background: red;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.list__comment {
+    font-style: italic;
+}
+
+.list__user-icon {
+    margin-right: 0.5rem;
+}
+
+
+.list__no-result {
+    text-align: center;
+    color: #28557b;
+}
