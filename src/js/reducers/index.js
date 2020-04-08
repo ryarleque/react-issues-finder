@@ -14,10 +14,12 @@ function rootReducer(state = initialState, action) {
       });
 
     case GET_REACT_ISSUES_LIST_BY_TITLE:
-      return Object.assign({}, state, {
-        reactIssuesList: [...action.payload]
-      });
-
+      if (action.payload) {
+        return Object.assign({}, state, {
+          reactIssuesList: [...action.payload]
+        });
+      }
+      return;
     case GET_DATA_LOADING:
       return { ...state, isLoading: !action.isLoading};
 

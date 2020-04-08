@@ -7,7 +7,7 @@ const params = {
 
 export function getReactIssuesList() {
   return function (dispatch) {
-    return fetch("https://api.github.com/search/issues?q=in:title+repo:facebook/react+is:issue&open",  params)
+    return fetch("/search/issues?q=in:title+repo:facebook/react+is:issue&open",  params)
       .then(response => response.json())
       .then(json => {
         dispatch({ type: GET_REACT_ISSUES_LIST, payload: json.items });
@@ -20,7 +20,7 @@ export function getReactIssuesList() {
 
 export function getReactIssuesListByTitle(item) {
   return function (dispatch) {
-    return fetch("https://api.github.com/search/issues?q=" + item + "in:title+repo:facebook/react+is:issue&open", params)
+    return fetch("/search/issues?q=" + item + "in:title+repo:facebook/react+is:issue&open", params)
       .then(response => response.json())
       .then(json => {
         dispatch({ type: GET_REACT_ISSUES_LIST_BY_TITLE, payload: json.items });
